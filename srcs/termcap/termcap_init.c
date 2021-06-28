@@ -21,6 +21,7 @@ int	ft_putchar_term(int c)
 t_termcap	*t_termcap_init(void)
 {
 	t_termcap	*result;
+	char		*term_name = getenv("TERM");
 
 	result = malloc(sizeof(t_termcap));
 	result->history_len = 10;
@@ -29,7 +30,10 @@ t_termcap	*t_termcap_init(void)
 	result->history[0] = NULL;
 	result->history_count = 0;
 	result->history_cursor = 0;
-	result->term_name = ft_strdup("xterm-256color");
+	if (term_name)
+		result->term_name = ft_strdup(term_name);
+	else
+		result->term_name = ft_strdup("xterm-256color");
 	tgetent(0, result->term_name);
 	result->cursor = 0;
 	result->line = malloc((MAX_PATH + 1) * sizeof(char));
