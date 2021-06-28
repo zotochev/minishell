@@ -23,6 +23,7 @@
 # include <sys/uio.h>
 # include <sys/wait.h>
 # include <signal.h>
+# include <stdlib.h>
 # include "libft.h"
 
 # include <term.h>
