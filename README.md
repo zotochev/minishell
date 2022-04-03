@@ -17,3 +17,5 @@ minishell is implementation of simple bash-like shell.
 * enviorment variables: `echo $HOME`
 * signals: `ctrl+c, ctrl+\, ctrl+d`
 * implementation of some system utilites: `echo, pwd, cd, env, export, unset, exit`
+
+Detailed project description you can find in `subject.pdf`.
