@@ -31,4 +31,4 @@ Detailed project description you can find in `subject.pdf`.
   * parser - module that create command object from tokenized string;
   * termcap - module for working with termcap library (handling arrow keys pushing for navigating throw history).
 * includes - header files
-* libft - self written C standart library
+* libft - self written C standard library
