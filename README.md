@@ -30,3 +30,5 @@ Detailed project description you can find in `subject.pdf`.
   * executor - module responsible for executing application (creating subprocesses and environment), piping (creating and connection), redirections;
   * parser - module that create command object from tokenized string;
   * termcap - module for working with termcap library (handling arrow keys pushing for navigating throw history).
+* includes - header files
+* libft - self written C standart library
