@@ -3,7 +3,7 @@
 ## Build
 Run `make` to build project
 
-## Rub
+## Run
 ```
 ./minishell
 ```
@@ -11,9 +11,9 @@ Run `make` to build project
 ## Decription
 minishell is implementation of simple bash-like shell.
 
-execute commands: `pwd`
-piping: `ls -l | cat -e`
-redirections [>, >>, <]: `ls -l > file.txt`, `cat -e < file.txt`
-enviorment variables: `echo $HOME`
-signals: `ctrl+c, ctrl+\, ctrl+d`
-implementation of some system utilites: `echo, pwd, cd, env, export, unset, exit`
+* execute commands: `pwd`
+* piping: `ls -l | cat -e`
+* redirections [>, >>, <]: `ls -l > file.txt`, `cat -e < file.txt`
+* enviorment variables: `echo $HOME`
+* signals: `ctrl+c, ctrl+\, ctrl+d`
+* implementation of some system utilites: `echo, pwd, cd, env, export, unset, exit`
