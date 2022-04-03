@@ -1,6 +1,7 @@
 # minishell
 
 ## Build
+requirements: gcc, make
 Run `make` to build project
 
 ## Run
