@@ -1,23 +1,19 @@
 # minishell
 
-Как запустить
+## Build
+Run `make` to build project
 
-Команда make для создания исполняемого файла minishell.
-
-Запуск исполняемого файла
-
+## Rub
+```
 ./minishell
+```
 
-Возможности
+## Decription
+minishell is implementation of simple bash-like shell.
 
-Minishell запускает исполняемые файлы из абсолюного пути или из переменной окружения PATH (/ bin / ls или ls ), включая аргументы или параметры.
-
-' и " работают так же, как bash, реализовано экраннирование \", \', \\, \|.
-
-Можно разделять команды с помощью ;, а также использовать редиректы > >> < и пайпы |.
-
-Переменные среды обрабатываются, как $HOME, включая код возврата $?. Также можно создавать и удалять переменные.
-
-Также можно использовать Ctrl-C для прерывания и Ctrl- \ для выхода из программы, а также Ctrl-D для вызова EOF, как в bash.
-
-Некоторые функции являются «встроенными», то есть мы не вызываем исполняемый файл, мы перекодировали их напрямую. Это касается echo, pwd, cd, env, export, unset и exit.
+execute commands: `pwd`
+piping: `ls -l | cat -e`
+redirections [>, >>, <]: `ls -l > file.txt`, `cat -e < file.txt`
+enviorment variables: `echo $HOME`
+signals: `ctrl+c, ctrl+\, ctrl+d`
+implementation of some system utilites: `echo, pwd, cd, env, export, unset, exit`
